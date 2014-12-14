@@ -1,0 +1,20 @@
+
+*~
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+pkg/
+*.lock
+# Berkshelf
+/cookbooks/
+.vagrant/
+# Bundler
+bin/*
+vendor/bundle
+.kitchen/
+.kitchen.local.yml
+#Keep Directory
+!.gitkeep
+!empty
