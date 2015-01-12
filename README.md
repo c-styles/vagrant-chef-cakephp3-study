@@ -17,3 +17,13 @@ vagrant plugin install vagrant-cachier
 # ChefDK
 
 Berkshelfを利用する為にインストール
+
+
+# Cookbook
+## users
+```
+dev.json
+openssl passwd -1 "password"
+dev:password
+```
+を生成
