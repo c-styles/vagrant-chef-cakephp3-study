@@ -6,7 +6,6 @@ metadata
 cookbook 'chef-solo-search'
 cookbook 'users'
 
-cookbook 'mysqld'
 
 cookbook 'mysql'
 cookbook 'database'

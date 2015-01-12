@@ -58,9 +58,9 @@ Vagrant.configure(2) do |config|
       chef.add_recipe "users::sysadmins"
       chef.add_recipe "vagrant-chef-cakephp3-study::mysql-server"
       chef.json = {
-        "mysqld" => {
-          "root_password" => "password"
-        }
+#        "mysqld" => {
+#          "root_password" => "password"
+#        }
       }
 # Or maybe a role
 #    chef.add_role "web"
