@@ -52,11 +52,17 @@ Vagrant.configure(2) do |config|
       chef.nodes_path = "nodes"
       chef.data_bags_path = "data_bags"
       # Add a recipe
-      chef.add_recipe "awscli"
+      #chef.add_recipe "awscli"
       chef.add_recipe "chef-solo-search"
       chef.add_recipe "users"
       chef.add_recipe "users::sysadmins"
-    # Or maybe a role
+      chef.add_recipe "vagrant-chef-cakephp3-study::mysql-server"
+      chef.json = {
+        "mysqld" => {
+          "root_password" => "password"
+        }
+      }
+# Or maybe a role
 #    chef.add_role "web"
   end
 
